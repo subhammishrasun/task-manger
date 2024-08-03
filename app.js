@@ -1,12 +1,10 @@
-// app.js
-
 const express = require('express');
 const connectDB = require('./db');
-const taskRoutes = require('./routes/tasks');
+const taskRoutes = require('./tasks');
 
 const app = express();
 
-// Connect Database
+// Connect to the database
 connectDB();
 
 // Middleware
